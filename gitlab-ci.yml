@@ -1,0 +1,14 @@
+stages:
+  - build
+  - test
+  build:
+    stage: build
+    script:
+      echo "building the prokect"
+      mkdir build
+      touch input.txt
+     test:
+      stage: test
+      script:
+        scho "testing the project"
+        
